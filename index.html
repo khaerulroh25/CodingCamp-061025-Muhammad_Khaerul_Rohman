@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <img src="Logo_revou.png" alt="Logo" width="100" />
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Our Profile</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#message-us">Message Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- WELCOME -->
+      <section id="welcome-section">
+        <div class="container welcome-text-area">
+          <h1 id="welcome-message">
+            Hi <span id="user-name"></span>, Welcome To Website
+          </h1>
+          <p>Ini adalah website latihan pertama</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </section>
+
+      <!-- HEADQUARTER -->
+      <section id="headquarter-section" class="container">
+        <h2>Our Headquarter</h2>
+        <div class="hq-circles">
+          <div class="hq-item">
+            <div class="circle"></div>
+            <p>Jakarta</p>
+          </div>
+          <div class="hq-item">
+            <div class="circle"></div>
+            <p>Bandung</p>
+          </div>
+          <div class="hq-item">
+            <div class="circle"></div>
+            <p>Surabaya</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MESSAGE US -->
+      <section id="message-us" class="container">
+        <h2>Message Us</h2>
+        <div class="message-content">
+          <div class="form-wrapper">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Nama"
+                />
+              </div>
+              <div class="form-group">
+                <label for="tanggal-lahir">Tanggal Lahir</label>
+                <input
+                  type="date"
+                  id="tanggal-lahir"
+                  name="tanggal-lahir"
+                  required
+                />
+              </div>
+              <div class="form-group gender-group">
+                <label>Jenis Kelamin</label>
+                <div class="radio-group">
+                  <input
+                    type="radio"
+                    id="pria"
+                    name="gender"
+                    value="Laki-Laki"
+                    required
+                  />
+                  <label for="pria">Laki-Laki</label>
+                  <input
+                    type="radio"
+                    id="wanita"
+                    name="gender"
+                    value="Perempuan"
+                  />
+                  <label for="wanita">Perempuan</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea
+                  id="pesan"
+                  name="pesan"
+                  rows="4"
+                  required
+                  placeholder="Pesan"
+                ></textarea>
+              </div>
+              <button type="submit" class="full-width-button">Submit</button>
+            </form>
+          </div>
+
+          <div id="submit-result" class="result-box">
+            <h3>Current Time: <span id="current-time"></span></h3>
+            <p>Nama: <span id="result-name"></span></p>
+            <p>Tanggal Lahir: <span id="result-dob"></span></p>
+            <p>Jenis Kelamin: <span id="result-gender"></span></p>
+            <p>Pesan: <span id="result-message"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer-note container">
+        <p>Created By RevoU</p>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
